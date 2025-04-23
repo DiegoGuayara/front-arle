@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: "Winky Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(90deg, #fff 1px, transparent 1px),
+    linear-gradient(0deg, #fff 1px, transparent 1px);
+  background-color: rgb(19, 19, 19);
+  background-size: 60px 60px; /* Define el tamaño de cada celda de la cuadrícula */
+  background-position: top left;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode {
+  background: linear-gradient(90deg, grey 3px, transparent 3px),
+    linear-gradient(0deg, grey 3px, transparent 3px);
+  background-color: rgb(210, 250, 255);
+  background-size: 60px 60px;
+  background-position: top left;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+}

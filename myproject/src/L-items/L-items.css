@@ -1,0 +1,484 @@
+.hoverArea {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.relleno-cont1 {
+  position: absolute;
+  height: 360px;
+  width: 100px;
+  background-color: rgb(30, 30, 30);
+  top: 180px;
+  left: 20px;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+.cont1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  background-color: rgb(54, 52, 52);
+  left: 23px;
+  top: 28px;
+  width: 35px;
+  padding-left: 22px;
+  border-radius: 50px;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.buttons-L-items {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Color picker */
+
+.color-picker {
+  position: absolute;
+  left: 130px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(30, 30, 30);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 10;
+  width: 400px;
+  height: 510px;
+  transition: all 0.3s ease;
+}
+
+.color-picker:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.color-coloresPrincipales {
+  position: relative;
+  bottom: 10px;
+  left: -5px;
+  width: 90px;
+  border-radius: 0;
+  height: 30px;
+}
+
+.color-picker .opciones {
+  position: relative;
+  left: -2px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(54, 52, 52);
+  color: white;
+  width: 400px;
+  height: 40px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.color-picker .opciones:hover {
+  background-color: rgb(41, 46, 56);
+}
+
+#color {
+  position: relative;
+  right: 20px;
+}
+
+.color-picker h2 {
+  position: relative;
+  bottom: 13px;
+}
+
+#cuadro-cuadricula {
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+  height: 240px;
+  border: 10px solid white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.colores-cuadro-cuadricula {
+  position: relative;
+  right: 0px;
+  width: 38px;
+  height: 30px;
+  border-radius: 0;
+}
+
+.colores-cuadro-cuadricula:nth-child(1){
+  border-radius: 10px 0 0 0;
+}
+
+.colores-cuadro-cuadricula:nth-child(10){
+  border-radius: 0 10px 0 0;
+}
+
+.colores-cuadro-cuadricula:nth-child(71){
+  border-radius: 0 0 0 10px;
+}
+
+.colores-cuadro-cuadricula:nth-child(80){
+  border-radius: 0 0 10px 0;
+}
+
+.coloresPrincipales {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 10px;
+}
+
+/* Editar container */
+
+.editar-container {
+  position: absolute;
+  left: 130px;
+  top: 100px;
+  gap: 10px;
+  background-color: rgb(30, 30, 30);
+  z-index: 10;
+  border-radius: 10px;
+  width: 400px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+.editar-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.editar-container button {
+  background-color: rgb(41, 46, 56);
+  width: 350px;
+  height: 70px;
+  position: relative;
+  left: 25px;
+  top: 20px;
+  transition: all 0.3s ease;
+}
+
+.editar-container button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.check-label,
+.editar-container h2 {
+  margin-left: 24px;
+}
+
+.coloresPrincipales input {
+  cursor: pointer;
+}
+
+.editar-container input[type="checkbox"] {
+  accent-color: green;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.titulo-paleta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-paleta button {
+  background-color: rgb(41, 46, 56);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.titulo-paleta button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.titulo-editar {
+  display: flex;
+  justify-content: space-between;
+}
+.titulo-editar button {
+  position: relative;
+  background-color: rgb(41, 46, 56);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+  margin-right: 40px;
+}
+.titulo-editar button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+/* Personalizar container */
+
+.titulo-personalizar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-personalizar button {
+  background-color: rgb(41, 46, 56);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.titulo-personalizar button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.personalizar-container {
+  position: absolute;
+  left: 130px;
+  top: 200px;
+  width: 400px;
+  height: 300px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.personalizar-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.personalizar-container h2 {
+  margin-left: 24px;
+}
+
+.personalizar-container input[type="range"] {
+  width: 350px;
+  height: 20px;
+  position: relative;
+  left: 25px;
+}
+
+.personalizar-container .velocidadAnimacion::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(74, 74, 74);
+  border-radius: 10px;
+}
+
+.personalizar-container .velocidadAnimacion::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #c0c0c0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.personalizar-container .gradosCamiseta {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.personalizar-container .direccionAnimacion {
+  margin-left: 30px;
+  margin-top: 25px;
+  width: 170px;
+  height: 30px;
+  background-color: rgb(41, 46, 56);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.personalizar-container .direccionAnimacion:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.personalizar-container .gradosCamiseta button {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background-color: rgb(41, 46, 56);
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.personalizar-container .gradosCamiseta button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+/* Genero container */
+
+.titulo-genero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.titulo-genero .titulo-genero-button {
+  position: absolute;
+  background-color: rgb(41, 46, 56);
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+}
+
+.titulo-genero button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.genero-container {
+  position: absolute;
+  left: 150px;
+  top: 325px;
+  width: 200px;
+  height: 200px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.genero-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.genero-container h2 {
+  margin-left: 40px;
+}
+
+.genero-container button {
+  background-color: rgb(41, 46, 56);
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.genero-container button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.genero-container-buttons {
+  margin-left: 24px;
+}
+
+/* Tipo de camiseta container */
+
+.titulo-tipo-camiseta {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-tipo-camiseta .titulo-tipo-camiseta-button {
+  position: absolute;
+  background-color: rgb(41, 46, 56);
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+}
+
+.titulo-tipo-camiseta button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+.tipo-camiseta-container {
+  position: absolute;
+  left: 150px;
+  top: 150px;
+  width: 300px;
+  height: 450px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.tipo-camiseta-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.tipo-camiseta-container h2 {
+  margin-left: 24px;
+}
+
+.tipo-camiseta-container-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 35px;
+}
+
+.tipo-camiseta-container-buttons button {
+  background-color: rgb(41, 46, 56);
+  width: 270px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.tipo-camiseta-container-buttons button span {
+  font-size: 30px;
+  margin-left: auto;
+}
+
+.tipo-camiseta-container-buttons button:hover {
+  background-color: rgb(61, 70, 86);
+}
+
+/* Estilo para el contenedor de la escena */
+.sceneShirt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70vw !important;
+  height: 90vh !important;
+}
